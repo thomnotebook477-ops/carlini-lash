@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carlini Concept UP | Design de Sobrancelhas</title>
+
+  <!-- FONTES (elegante + legível) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <!-- HEADER / NAV -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#inicio" aria-label="Voltar ao início">
+        <span class="brand__name">Carlini Concept UP</span>
+        <span class="brand__tag">Design de Sobrancelhas</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#resultados">Resultados</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Agendar</a>
+      </nav>
+
+      <!-- CTA (desktop) -->
+      <a class="btn btn--ghost" href="#contato">Agendar</a>
+
+      <!-- Botão menu (mobile) -->
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Menu mobile -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#resultados">Resultados</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Agendar</a>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="pill">Atendimento a domicílio • Guarulhos - SP</p>
+
+          <h1 class="h1">
+            Design de Sobrancelhas <span class="amp">&amp;</span> Henna
+          </h1>
+
+          <p class="lead">
+            Naturalidade, simetria e acabamento impecável para realçar sua beleza.
+          </p>
+
+          <div class="hero__actions">
+            <!-- TROQUE O LINK DO WHATSAPP AQUI -->
+            <a class="btn btn--wa" id="waHero" href="https://wa.me/5511978351298?text=Olá!%20Quero%20agendar%20um%20horário." target="_blank" rel="noopener">
+              Agendar pelo WhatsApp
+            </a>
+
+            <a class="btn btn--soft" href="#resultados">Ver resultados</a>
+          </div>
+
+          <div class="trust">
+            <div class="trust__item">
+              <span class="trust__dot"></span>
+              <span>Atendimento personalizado</span>
+            </div>
+            <div class="trust__item">
+              <span class="trust__dot"></span>
+              <span>Horário marcado</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <!-- ✅ IMAGEM PRINCIPAL (TROCAR AQUI) -->
+          <img
+            class="hero__img"
+            src="hero 2.jpg"
+            alt="Foto do estúdio / sobrancelhas"
+            loading="eager"
+          />
+
+          <div class="badge">
+            <span class="badge__title">Agende agora</span>
+            <span class="badge__text">Resposta rápida no WhatsApp</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTADOS / GALERIA (fundo claro) -->
+    <section id="resultados" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Resultados reais</h2>
+          <p class="muted">Alguns trabalhos para você ver o estilo e acabamento.</p>
+        </div>
+
+        <div class="gallery">
+          <!-- ✅ TROQUE AS IMAGENS AQUI -->
+          <!-- IMPORTANTE: se o arquivo não existir, aparece "quebrado" igual no seu print -->
+          <figure class="card">
+            <img class="gallery__img" data-gallery="results" src="resultado 5.png" alt="Resultado 1" loading="lazy">
+          </figure>
+          <figure class="card">
+            <img class="gallery__img" data-gallery="results" src="resultado 3.png" alt="Resultado 2" loading="lazy">
+          </figure>
+          <figure class="card">
+            <img class="gallery__img" data-gallery="results" src="resultado 4.png" alt="Resultado 3" loading="lazy">
+          </figure>
+          <figure class="card">
+            <img class="gallery__img" data-gallery="results" src="resultado 1.png" alt="Resultado 4" loading="lazy">
+          </figure>
+          <figure class="card">
+            <img class="gallery__img" data-gallery="results" src="resultado 2.png" alt="Resultado 5" loading="lazy">
+          </figure>
+          <figure class="card">
+            <img class="gallery__img" data-gallery="results" src="resultado 6.png" alt="Resultado 6" loading="lazy">
+          </figure>
+        </div>
+
+        <div class="center">
+          <a class="btn btn--wa" id="waResults" href="https://wa.me/5511978351298?text=Olá!%20Vi%20os%20resultados%20e%20quero%20agendar." target="_blank" rel="noopener">
+            Quero agendar
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section section--alt">
+      <div class="container about">
+        <div class="about__media">
+          <!-- ✅ SUA FOTO (pode ficar com texto, sem problema) -->
+          <img class="about__img" src="sobre.png" alt="Foto da profissional" loading="lazy">
+        </div>
+
+        <div class="about__copy">
+          <h2 class="h2">Sobre</h2>
+          <p>
+            Sou a <strong>Profissional</strong> por trás do <strong>Carlini Concept UP</strong>.
+            Meu foco é valorizar sua beleza com um resultado natural, alinhado ao seu rosto
+            e ao seu estilo.
+          </p>
+          <p class="muted">
+            Atendimento a domicílio em <strong>Guarulhos - SP</strong> com horário marcado.
+          </p>
+
+          <div class="about__cta">
+            <a class="btn btn--wa" id="waAbout" href="https://wa.me/5511978351298?text=Olá!%20Quero%20saber%20mais%20e%20agendar%20um%20horário." target="_blank" rel="noopener">
+              Falar no WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Serviços</h2>
+          <p class="muted">Aqui vamos colocar a lista final quando ela confirmar.</p>
+        </div>
+
+        <div class="services">
+          <div class="service">
+            <h3>Design de Sobrancelhas</h3>
+            <p class="muted">Alinhamento e acabamento natural para valorizar seu olhar.</p>
+          </div>
+
+          <div class="service">
+            <h3>Henna</h3>
+            <p class="muted">Preenchimento com efeito definido e harmonioso.</p>
+          </div>
+
+          <div class="service">
+            <h3>Visagismo / Simetria Facial</h3>
+            <p class="muted">Mapeamento para um resultado equilibrado e personalizado.</p>
+          </div>
+        </div>
+
+        <div class="cta-box">
+          <div>
+            <h3 class="cta-box__title">Agende seu horário</h3>
+            <p class="muted">Clique no WhatsApp e me diga qual serviço você quer fazer.</p>
+          </div>
+          <a class="btn btn--wa" id="waServices" href="https://wa.me/5511978351298?text=Olá!%20Quero%20agendar%20um%20serviço." target="_blank" rel="noopener">
+            Agendar
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO / FINAL -->
+    <section id="contato" class="section section--alt">
+      <div class="container final">
+        <h2 class="h2">Pronta para realçar sua beleza?</h2>
+        <p class="muted">Atendimento a domicílio em Guarulhos - SP. Agende pelo WhatsApp.</p>
+
+        <div class="final__actions">
+          <a class="btn btn--wa btn--big" id="waFinal" href="https://wa.me/5511978351298?text=Olá!%20Quero%20agendar%20um%20horário%20hoje." target="_blank" rel="noopener">
+            Agendar no WhatsApp
+          </a>
+
+          <!-- ✅ TROQUE AQUI PELO INSTAGRAM DELA -->
+          <a class="btn btn--soft btn--big" href="https://www.instagram.com/carliniconceptup/" target="_blank" rel="noopener">
+            Ver Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <strong>Carlini Concept UP</strong>
+        <p class="muted">Design de Sobrancelhas • Guarulhos - SP</p>
+      </div>
+
+      <div class="footer__links">
+        <a href="#inicio">Topo</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#servicos">Serviços</a>
+      </div>
+
+      <div class="footer__copy">
+        <p class="muted small">
+          &copy; <span id="year"></span> Carlini Concept UP. Todos os direitos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX (galeria ao clicar nas fotos) -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox__overlay" data-lb-close></div>
+
+    <div class="lightbox__content" role="dialog" aria-modal="true" aria-label="Galeria de resultados">
+      <button class="lightbox__close" type="button" aria-label="Fechar" data-lb-close>&times;</button>
+
+      <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Imagem anterior" data-lb-prev>
+        &#10094;
+      </button>
+
+      <figure class="lightbox__figure">
+        <img class="lightbox__img" id="lightboxImg" alt="" />
+        <figcaption class="lightbox__caption" id="lightboxCaption"></figcaption>
+      </figure>
+
+      <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Próxima imagem" data-lb-next>
+        &#10095;
+      </button>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
